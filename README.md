@@ -1,6 +1,7 @@
 # Flight-Controller-PCB
 A FC design with 3 interconnected boards, each with 2 layers. This is a prototype design, I just went through the first iteration and there were significant problems that I need to solve in the next version. This repository is just a way for me to keep track of my progress.
 
+Contact me for the gerber manufacturing files and the bill of materials.
 **TOP BOARD**
 The top board contains the logic and a GNSS module (ATGM336H-5N31). During flight and programming, data is fed into the ESP32-S3-WROOM1U module via I2C, UART, Serial, and SPI interfaces. Currently, the ESP32 works, and does respond to computer signals, but I haven't gotten the GNSS Module to work yet. To load program into the ESP32, the BOOT button must be held down during power up. When programming for the first time, both the RST and BOOT button must be held down. There are 2 output headers on this layer, for SPI and Serial communication.
 
